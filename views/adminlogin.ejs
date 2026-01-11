@@ -1,0 +1,97 @@
+<style>
+  
+  body{margin: 0;}
+    .maincontainer{
+       background-color: #fff;
+       width: 98%;
+       height: 100%;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       font-family: Lato;
+    }
+    .firstcontainer{
+      width: 700px;
+      height: 700px;
+      background-color: aliceblue;
+      margin-left: 30px;
+    }
+    .secondcontainer{
+      width: 700px;
+      height: 700px;
+      background-color:#b2bec3;
+     }
+    .form{
+      display:flex;
+      flex-direction: column;
+       
+    }  
+    .logo{
+        width: 20px;
+        height: 10px;
+    }
+      
+</style> 
+<html>
+  <head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+  </head>
+  
+  <div class="maincontainer">
+ <div class="firstcontainer col-xs-0 col-sm-0 col-lg-6">
+  
+  <img src="/images/pic.png" width="700px" height="700px">
+ </div>
+ <div class="secondcontainer col-xs-6 col-sm-6 col-lg-6">
+   
+  <div style="display: flex; justify-content: center; ">
+  <div style="font-size: large;margin-top: 110px;"><h1>Admin Login</h1></div>
+  </div>
+  <div style="display: flex; justify-content: center;">
+    <img src="/images/lock.png" width="50px" height="50px">
+  </div>
+  <form action="/admin/check_login" method="post">
+  <div style="display: flex; justify-content: center; margin: 40px;">
+   
+  <input class="form-control" type="text" style="width: 320px; height: 40px;" name="emailid" placeholder=" Email or Mobile number" width="20%" height="10%">
+  </div>
+  <div style="display: flex; justify-content: center; margin-top: 20px;">
+    <input class="form-control" type="password" style="width: 320px; height: 40px;" name="password" placeholder="Password">
+  </div>
+  <div style="display: flex; justify-content: center;margin-top: 40px;">
+    <button type="submit" class="btn btn-primary btn-lg" style="width: 320px; height: 40px; font-weight: bold; font-size: 20px;">Login</button>
+  </div>
+
+</form>
+
+ <div class="row mt-5" style="display: flex; justify-content: center;">
+  <div style="display: flex;justify-content: center;  margin-top: 10px;">
+      <%=message %>
+  </div>
+  </div> 
+  
+ 
+   <div class="row mt-5" style="display: flex; justify-content: center;">
+   <div>
+    <a style="display: flex;justify-content: center;  margin-top: 0;">  Forgot Password....</a>
+   </div>
+   </div> 
+   
+
+
+ </div>
+
+
+
+
+
+  </div>
+ 
+  
+</html>

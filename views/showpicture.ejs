@@ -1,0 +1,13 @@
+<html>
+    <center>
+        <form action="/vehicle/edit_picture" method="post" enctype="multipart/form-data">
+            <input type="hidden" name="vehicleid" value="<%=data.vehicleid %>"><br><br>
+            <h1><%=data.vehiclename %></h1><br><br>
+            <img src="/images/<%=data.vehiclepicture %>" width="200" height="200"/><br><br>
+            <b>Select New Picture:</b><br><br>
+            <input type="hidden" name="oldvehiclepicture" value="<%=data.vehiclepicture %>" /><br><br>
+            <input type="file" required name="vehiclepicture" accept="images/*" /><br><br>
+            <input type="submit" >
+        </form>
+    </center>
+</html>
